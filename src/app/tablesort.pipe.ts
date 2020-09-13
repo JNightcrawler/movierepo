@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { searchall } from './shared/searchAll';
+import { searchall } from './shared/searchall';
 
 @Pipe({
   name: 'tablesort'
