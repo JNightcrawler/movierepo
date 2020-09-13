@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { searchall } from '../shared/searchAll';
+import { searchall } from '../shared/searchall';
 
 
 @Component({
