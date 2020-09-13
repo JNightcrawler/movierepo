@@ -16,13 +16,13 @@ fs.readdir(directoryPath, function (err, files) {
     });
 });
 app.use(express.static('./dist/movierepo'))
-//console.log(__dirname);
+console.log(__dirname);
 app.get('/*',function(req,res){
     res.sendFile(path.join(__dirname,'./dist/movierepo/index.html'));
 
 });
 
-
+console.log('port--->'+process.env.PORT);
 
 app.listen(process.env.PORT || 8080,function(){
 console.log('app started');
