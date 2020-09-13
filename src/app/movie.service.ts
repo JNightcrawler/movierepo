@@ -13,7 +13,7 @@ export class MovieService {
 
   getmoviedetail(name:string):Observable<any>
   {
-    return this.http.get<any>("http://www.omdbapi.com/?s="+name+"&apikey=d4a30481").pipe(retry(2),catchError((error:HttpErrorResponse)=>{
+    return this.http.get<any>("https://www.omdbapi.com/?s="+name+"&apikey=d4a30481").pipe(retry(2),catchError((error:HttpErrorResponse)=>{
     let errorMessage='';  
     if (error.error instanceof ErrorEvent) {
         // client-side error
