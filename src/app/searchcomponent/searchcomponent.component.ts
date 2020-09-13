@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../movie.service';
-import { searchall } from '../shared/searchAll';
+import { searchall } from '../shared/searchall';
 
 @Component({
   selector: 'app-searchcomponent',
