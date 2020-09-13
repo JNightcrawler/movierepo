@@ -1,0 +1,17 @@
+
+<div class="container">
+    <div class="table-responsive">
+        <table class="table">
+            <th appTablecol sortcolumn="Title"  (sort)="onSort($event)"scope="col" class="fa" [ngClass]="{'fa-arrow-up':asc,'fa-arrow-down':desc}">Title</th>
+            <th appTablecol sortcolumn="Year" (sort)="onSort($event)" scope="col">Year</th>
+            <th appTablecol sortcolumn="IMBID" (sort)="onSort($event)" >IMDBID</th>
+            <th appTablecol sortcolumn="Title" (sort)="onSort($event)">Type</th>
+            <tr *ngFor="let searchdata of tableviewdata">
+                <td>{{searchdata.Title}}</td>
+                <td>{{searchdata.Year}}</td>
+                <td>{{searchdata.imdbID}}</td>
+                <td>{{searchdata.Type}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

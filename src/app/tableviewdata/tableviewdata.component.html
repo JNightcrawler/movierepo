@@ -1,0 +1,22 @@
+<div class="main">
+<div class="container-fluid">
+    <div class="table-responsive">
+        <table id="tableele" class="table table-striped">
+            
+            <th scope="col" (click)="headerclick($event)"  [ngClass]="{'fa-arrow-up':tasc,'fa-arrow-down':tdesc}">Title</th>
+            <th scope="col" (click)="headerclick($event)" [ngClass]="{'fa-arrow-up':yasc,'fa-arrow-down':ydesc}">Year</th>
+            <th scope="col" (click)="headerclick($event)">IMDBID</th>
+            <th scope="col" (click)="headerclick($event)">Type</th>
+      
+        <tbody>
+            <tr *ngFor="let searchdata of tableviewdata | tablesort : colName : order " scope="row">
+                <td>{{searchdata.Title}}</td>
+                <td>{{searchdata.Year}}</td>
+                <td>{{searchdata.imdbID}}</td>
+                <td>{{searchdata.Type}}</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
+</div>

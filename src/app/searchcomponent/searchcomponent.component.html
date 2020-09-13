@@ -1,0 +1,25 @@
+<div class="headerContainer">
+    <div class="container">
+            Movie Hub
+    </div>
+   
+</div>
+
+<div class="container-fluid header">
+<div class="row justify-content-center">
+    <div class="col-lg-8 col-md-6 col-sm-12" >
+       
+            <input [(ngModel)]="searchterm" id="txt"  name="searchfd" required="">
+            <label for="txt">Movie Name</label>
+    </div>
+   
+      
+    
+    <div class="col-lg-2 col-md-6 col-sm-12 searchbtn" style="align-items: center;">
+    <button class="btn btn-primary" (click)="search()">Search</button>
+    </div>
+</div>
+
+<!--<app-tableview [tableviewdata]="result"> </app-tableview> -->
+<app-tableviewdata [tableviewdata]="result"></app-tableviewdata> 
+</div>

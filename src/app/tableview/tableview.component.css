@@ -1,0 +1,27 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+th{
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.fa-arrow-up:before{
+content: '';
+}
+
+.fa-arrow-up:after {
+    content: "\f062";
+    margin: 18px;
+}
+
+.fa-arrow-down:before{
+    content: '';
+    }
+
+.fa-arrow-down:after {
+    content: "\f063";
+    margin: 18px;
+}
+    
+   
+
